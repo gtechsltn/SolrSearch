@@ -32,6 +32,6 @@ namespace SolrSearch.Controllers
         {
             await _solrProductRepository.Add(product);
             return Ok(product);
-        }        
+        }
     }
 }

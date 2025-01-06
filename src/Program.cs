@@ -24,7 +24,9 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 });
+
 //builder.Services.BuildServiceProvider();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -42,7 +44,5 @@ app.UseSwaggerUI(options =>
     options.RoutePrefix = "swagger";
     options.DisplayRequestDuration();
 });
-
-
 
 app.Run();

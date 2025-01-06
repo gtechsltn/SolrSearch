@@ -7,7 +7,7 @@ public class Product
     [SolrUniqueKey("id")]
     public string Id { get; set; }
 
-    [SolrField("name")]    
+    [SolrField("name")]
     public string Name { get; set; }
 
     [SolrField("manu")]

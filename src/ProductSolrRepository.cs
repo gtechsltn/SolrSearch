@@ -38,7 +38,7 @@ public class ProductSolrRepository : IProductSolrRepository
         if (!string.IsNullOrEmpty(searchNameString))
             return _solr.Query(new SolrQueryByField("name_str", $"name_str:*{searchNameString.Replace(' ', '*')}*")).ToList();
         else
-            return _solr.Query(SolrQuery.All).ToList();                                                                                                                                                                                                                                                     
+            return _solr.Query(SolrQuery.All).ToList();
     }
 
 }
